@@ -107,6 +107,7 @@ Number_in_household = models.IntegerField(max_length=2, default='')
 
 
 class Household_Information(models.Model):
+
     choice = (
         ('1', 'Single Adult'),
         ('2', 'Female-headed single parent household'),
@@ -120,11 +121,13 @@ class Household_Information(models.Model):
     Household_Type = models.CharField(max_length=20, choices=choice)
 
 class Monthly_Budget(models.Model):
+
     Total_Gross_Income = models.PositiveIntegerField(blank=True, default='1')#may need to add editable
     Total_Net_Income = models.PositiveIntegerField(blank=True, default='1')#may need to add editable
     Total_Expense = models.PositiveIntegerField(blank=True, default='1')#may need to add editable
 
 class Expenses(models.Model):
+
     Housing_Rental_Payment = models.SmallIntegerField(default='')
     Housing_1st_Mortgage_Payment = models.SmallIntegerField(default='')
     Housing_Utility_Electric_Gas_Payment = models.SmallIntegerField(default='')
@@ -163,11 +166,5 @@ anythingelse = models.TextField()
 
 
 
-class PublishedManager(models.Manager):
-    def get_queryset(self):
-        return super(PublishedManager,
-                     self).get_queryset()\
-                          .filter(status='published')
-class Post(models.Model):
 
-
+#class Post(models.Model):
