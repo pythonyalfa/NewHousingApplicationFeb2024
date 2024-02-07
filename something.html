@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="mainLoad" class="navbar navbar-inverse set-radius-zero ng-scope" ng-if="!isSafariAccess &amp;&amp; !isItpAccess" style="">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-7 col-lg-8 no-left-spacing">
+                        <!-- ngIf: !isLtiAccess --><div class="navbar-header ng-scope" role="banner" aria-hidden="true" ng-if="!isLtiAccess">
+                            <a class="navbar-brand text-hide" ng-href="http://www.pearsonitcertification.com/" target="_blank" href="http://www.pearsonitcertification.com/"><img class="img-responsive" alt="pearson" src="assets/img/logo_updated.png"></a>
+                        </div><!-- end ngIf: !isLtiAccess -->
+                        <!-- ngIf: isLtiAccess -->
+                        <div class="navbar-header hidden-xs" style="margin-top:12px; ">
+                            | <span style="font-size:smaller;padding-left:5px;" aria-hidden="true">Pearson Test Prep</span>
+                        </div>
+                    </div>
+                    <!-- uiView: userAccount --><div class="col-xs-6 col-sm-5 col-lg-4 no-right-spacing ng-scope" ui-view="userAccount">
+
+                    </div>
+</body>
+</html>

@@ -31,14 +31,14 @@ class MonthlyBudgetAdmin(admin.ModelAdmin):
 @admin.register(Expenses)
 class ExpensesAdmin(admin.ModelAdmin):
     list_display = ('Housing_Rental_Payment',)
-    list_filter = ['Housing_Rental_Payment',]
+
 
 @admin.register(Misc_Expense)
 class MiscExpenseAdmin(admin.ModelAdmin):
     list_display = ('Education_Tuition_Books',)
 
 
-
-
+# We have to think of how its going to look from the front
+# at work the back end is jacked up and doesnt want to show
 
 
